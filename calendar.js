@@ -30,7 +30,7 @@
 // TODO: small resizing problem when today box moves to the next day
 // TODO: need a way of exporting/importing data
 
-remoteStorage.loadModule('calendar', 'rw');//first load all modules
+remoteStorage.claimAccess('calendar', 'rw');//first claim access to all modules
 remoteStorage.displayWidget('widget');//after that, display the widget
 
 function nextItemId()
